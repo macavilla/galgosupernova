@@ -1,16 +1,30 @@
 ---
-import HomeBlock from './HomeBlock.astro'
+import HomeBlock from '@components/Home/HomeBlock.astro'
+// TODO: ADD IMAGES ASSETS
+import img0 from '@images/home/img_0.png'
+import img1 from '@images/home/img_1.png'
+import img2 from '@images/home/img_2.png'
+
+import { Image } from 'astro:assets'
 ---
 
+<div class="flex justify-center">
+	<!-- TODO: ADD IMAGES ALTS  -->
+	<Image class="w-1/3" src={img0} alt="galgosupernova" />
+	<Image class="w-1/3" src={img1} alt="galgosupernova" />
+	<Image class="w-1/3" src={img2} alt="galgosupernova" />
+</div>
+<div class="my-4 mx-auto w-2/3">
+	<p class="text-center text-2xl">
+		<b>galgosupernova</b> es la práctica de una mecánica comunitaria. un proyecto
+		que expande conocimientos sobre bicicletas, herramientas y la auto-reparación.
+	</p>
+</div>
 <HomeBlock title="¿Qué es galgo supernova?">
 	<p>
 		Es un proyecto sobre bicicletas con una mirada sobre la autonomía y el
 		auto-cuidado, con el objetivo de difundir conocimientos sobre mecánica para
-		estimular una movilidad libre. Practicamos desarmar y armar. Buscamos
-		reparar lo que no está funcionando y darle una nueva oportunidad.
-		Practicamos una mecánica comunitaria porque buscamos creativamente una
-		salida en conjunto, intervenir positivamente en el funcionamiento de
-		cualquier dispositivo.
+		estimular una movilidad libre.
 	</p>
 	<p>
 		Practicamos desarmar y armar. Buscamos reparar lo que no está funcionando y
