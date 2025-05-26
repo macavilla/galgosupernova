@@ -1,0 +1,85 @@
+---
+import HomeBlock from '@components/Home/HomeBlock.astro'
+// TODO: ADD IMAGES ASSETS
+import img0 from '@images/home/img_0.png'
+import img1 from '@images/home/img_1.png'
+import img2 from '@images/home/img_2.png'
+
+import { Image } from 'astro:assets'
+---
+
+<div class="flex justify-center">
+	<!-- TODO: ADD IMAGES ALTS  -->
+	<Image class="w-1/3" src={img0} alt="galgosupernova" />
+	<Image class="w-1/3" src={img1} alt="galgosupernova" />
+	<Image class="w-1/3" src={img2} alt="galgosupernova" />
+</div>
+<div class="my-4 mx-auto w-2/3">
+	<p class="text-center text-2xl">
+		<b>galgosupernova</b> es la práctica de una mecánica comunitaria. un proyecto
+		que expande conocimientos sobre bicicletas, herramientas y la auto-reparación.
+	</p>
+</div>
+<HomeBlock title="¿Qué es galgo supernova?">
+	<p>
+		Es un proyecto sobre bicicletas con una mirada sobre la autonomía y el
+		auto-cuidado, con el objetivo de difundir conocimientos sobre mecánica para
+		estimular una movilidad libre.
+	</p>
+	<p>
+		Practicamos desarmar y armar. Buscamos reparar lo que no está funcionando y
+		darle una nueva oportunidad. Practicamos una mecánica comunitaria porque
+		buscamos creativamente una salida en conjunto, intervenir positivamente en
+		el funcionamiento de cualquier dispositivo.
+	</p>
+</HomeBlock>
+<HomeBlock title="¿cómo?">
+	<p>
+		galgosupernova sostiene un espacio de <b>taller abierto</b> de mecánica de bicicletas.
+	</p>
+	<p>
+		Durante los horarios programados, a menos dos mecánicxs estarán disponibles
+		a colaborar en que aprendas a reparar tu propia bicicleta. Nuestra meta es
+		que hagas el trabajo por vos mismx, guiando en el paso a paso y con
+		recomendaciones específicas para cada caso. ¡No es una bicicletería!
+	</p>
+	<p>
+		No es un curso, es una dinámica apta para todo público sin la necesidad de
+		contar con conocimientos previos y sin cita previa. Disponemos de un espacio
+		de trabajo compartido con mesas, pies de trabajo y herramientas. Ofrecemos
+		la guía de nuestro equipo de mecánica a través de un intercambio recíproco
+		basado en un valor-hora sugerido.
+	</p>
+	<p>
+		Abrimos la participación a personas con cualquier nivel de experiencia para
+		realizar mantenimientos y reparaciones de diversa complejidad: limpieza de
+		tu bici, ajustes de frenos y regulación de cambios, pachado, cambio de
+		cámaras y cubiertas, rodamientos, centrado de ruedas y otros misterios de la
+		mecánica. Nos encanta hacer lo que hacemos. ¡Sentite bienvenidx!
+	</p>
+	<p>
+		Aparte del <b>valor-hora por uso de taller</b>, también podés colaborar con
+		la compra de bicicletas usadas, bicipartes usadas y un pequeño stock de
+		partes nuevas. Aceptamos donaciones de componentes en buenas condiciones y
+		bicicletas en desuso.
+	</p>
+</HomeBlock>
+<HomeBlock title="¿dónde y cuándo?">
+	<h3 class="font-bold">Taller abierto de Bicis</h3>
+	<p>
+		Martes 18 a 20hs; Miércoles, jueves y viernes de 9 a 12hs <br /> en Centro Verde
+		Yerbal (Yerbal 1419, Caballito) <br />Espacio de auto-reparación articulado
+		en la Cooperativa RUO.
+	</p>
+
+	<h3>Otras alianzas:</h3>
+
+	<ul>
+		<li>
+			<b>Curso "Mecánica de bicicletas" </b>
+			Martes 14 a 18 <br /> en CFP N°24 (Morón 2538, Flores) <br />Trayecto
+			pedagógico anual gratuito. <br />Preinscripciones abiertas para 2025.
+		</li>
+		<li>Taller móvil con “Club de Reparadores”</li>
+	</ul>
+</HomeBlock>
