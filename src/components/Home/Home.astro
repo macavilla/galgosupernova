@@ -1,5 +1,7 @@
 ---
 import HomeBlock from '@components/Home/HomeBlock.astro'
+import Navbar from '@components/Navbar/Navbar.jsx'
+
 // TODO: ADD IMAGES ASSETS
 import img0 from '@images/home/img_0.png'
 import img1 from '@images/home/img_1.png'
@@ -8,6 +10,7 @@ import img2 from '@images/home/img_2.png'
 import { Image } from 'astro:assets'
 ---
 
+<Navbar client:load />
 <div class="flex justify-center">
 	<!-- TODO: ADD IMAGES ALTS  -->
 	<Image class="w-1/3" src={img0} alt="galgosupernova" />
