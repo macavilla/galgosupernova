@@ -1,12 +1,23 @@
 {
-	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"@components/*": ["src/components/*"],
-			"@images/*": ["src/assets/images/*"]
-		}
-	},
-	"extends": "astro/tsconfigs/strict",
-	"include": [".astro/types.d.ts", "**/*"],
-	"exclude": ["dist"]
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@images/*": [
+        "src/assets/images/*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  },
+  "extends": "astro/tsconfigs/strict",
+  "include": [
+    ".astro/types.d.ts",
+    "**/*"
+  ],
+  "exclude": [
+    "dist"
+  ]
 }
