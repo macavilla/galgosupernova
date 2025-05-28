@@ -9,7 +9,7 @@ const Navbar = () => {
 
 	return (
 		<nav className="bg-white border-b border-gray-200">
-			<div className="mx-auto px-4 sm:px-6 lg:px-8">
+			<div className="mx-auto px-4 sm:px-6 lg:px-10">
 				<div className="flex justify-between items-center h-16">
 					{/* Logo */}
 					<div className="flex-shrink-0 flex items-center">
@@ -21,7 +21,7 @@ const Navbar = () => {
 					{/* Navigation Links */}
 					<div className="hidden sm:flex sm:space-x-8">
 						<a
-							href="/"
+							href="/que"
 							className="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
 						>
 							¿qué?
