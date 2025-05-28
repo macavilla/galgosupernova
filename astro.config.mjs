@@ -8,7 +8,6 @@ import react from '@astrojs/react'
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://macavilla.github.io',
-	base: '/galgosupernova',
 	vite: {
 		plugins: [tailwindcss()]
 	},
