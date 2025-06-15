@@ -1,7 +1,8 @@
 import { useState } from 'react'
+import InternalLink from '@components/InternalLink/InternalLink'
 
 const Navbar = () => {
-	const [isOpen, setIsOpen] = useState(false)
+	const [isOpen, setIsOpen] = useState<boolean>(false)
 
 	const toggleMenu = () => {
 		setIsOpen(!isOpen)
@@ -20,36 +21,36 @@ const Navbar = () => {
 
 					{/* Navigation Links */}
 					<div className="hidden sm:flex sm:space-x-8">
-						<a
+						<InternalLink
 							href="/que"
 							className="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
 						>
 							¿qué?
-						</a>
-						<a
+						</InternalLink>
+						<InternalLink
 							href="/como"
 							className="text-gray-500 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
 						>
 							¿cómo?
-						</a>
-						<a
+						</InternalLink>
+						<InternalLink
 							href="/donde"
 							className="text-gray-500 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
 						>
 							¿dónde y cuándo?
-						</a>
-						<a
+						</InternalLink>
+						<InternalLink
 							href="/hola"
 							className="text-gray-500 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
 						>
 							¿hola?
-						</a>
-						<a
+						</InternalLink>
+						<InternalLink
 							href="/collabora"
-							className="text-gray-500 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
+							className="text-gray-100 bg-black hover:text-indigo-600 px-3 py-2 text-sm font-medium"
 						>
 							¡colaborá!
-						</a>
+						</InternalLink>
 					</div>
 
 					{/* Mobile Menu Button */}
@@ -84,36 +85,36 @@ const Navbar = () => {
 				{/* Mobile Menu */}
 				{isOpen && (
 					<div className="sm:hidden space-y-1 px-2 pt-2 pb-3">
-						<a
+						<InternalLink
 							href="/"
 							className="block text-gray-900 hover:text-indigo-600 px-3 py-2 text-base font-medium"
 						>
 							¿qué?
-						</a>
-						<a
+						</InternalLink>
+						<InternalLink
 							href="/como"
 							className="block text-gray-500 hover:text-indigo-600 px-3 py-2 text-base font-medium"
 						>
 							¿cómo?
-						</a>
-						<a
+						</InternalLink>
+						<InternalLink
 							href="/donde"
 							className="block text-gray-500 hover:text-indigo-600 px-3 py-2 text-base font-medium"
 						>
 							¿dónde y cuándo?
-						</a>
-						<a
+						</InternalLink>
+						<InternalLink
 							href="/hola"
 							className="block text-gray-500 hover:text-indigo-600 px-3 py-2 text-base font-medium"
 						>
 							¿hola?
-						</a>
-						<a
+						</InternalLink>
+						<InternalLink
 							href="/collabora"
-							className="block text-gray-500 hover:text-indigo-600 px-3 py-2 text-base font-medium"
+							className="block text-gray-100 bg-black hover:text-indigo-600 px-3 py-2 text-base font-medium"
 						>
 							¡colaborá!
-						</a>
+						</InternalLink>
 					</div>
 				)}
 			</div>
