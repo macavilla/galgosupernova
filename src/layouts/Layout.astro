@@ -1,6 +1,7 @@
 ---
 import '@styles/global.css'
 import Navbar from '@components/Navbar/Navbar.tsx'
+import Footer from '@components/Footer/Footer.astro'
 const baseUrl = import.meta.env.BASE_URL || '/'
 ---
 
@@ -18,5 +19,7 @@ const baseUrl = import.meta.env.BASE_URL || '/'
 		<main class="px-4 md:px-6 lg:px-10 py-6">
 			<slot />
 		</main>
+
+		<Footer />
 	</body>
 </html>
