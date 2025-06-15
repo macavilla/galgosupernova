@@ -46,7 +46,7 @@ const Navbar = () => {
 							¿hola?
 						</InternalLink>
 						<InternalLink
-							href="/collabora"
+							href="/colabora"
 							className="text-gray-100 bg-black hover:text-indigo-600 px-3 py-2 text-sm font-medium"
 						>
 							¡colaborá!
@@ -110,7 +110,7 @@ const Navbar = () => {
 							¿hola?
 						</InternalLink>
 						<InternalLink
-							href="/collabora"
+							href="/colabora"
 							className="block text-gray-100 bg-black hover:text-indigo-600 px-3 py-2 text-base font-medium"
 						>
 							¡colaborá!
