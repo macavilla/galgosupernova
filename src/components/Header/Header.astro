@@ -1,0 +1,22 @@
+---
+import InternalLink from '@components/InternalLink/InternalLink'
+import NavMenu from '@components/Header/Nav/NavMenu'
+import Logo from '@images/galgosupernova-logo.jpg'
+import Image from 'astro/components/Image.astro'
+---
+
+<header class="bg-white border-b border-gray-200">
+	<div>
+		<div class="flex justify-between items-center w-full">
+			<InternalLink client:load href="">
+				<Image
+					class="col-span-2"
+					src={Logo}
+					alt="Galgosupernova Logo"
+					class="w-28"
+				/>
+			</InternalLink>
+			<NavMenu client:load />
+		</div>
+	</div>
+</header>
