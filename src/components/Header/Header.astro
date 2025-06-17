@@ -1,0 +1,13 @@
+---
+import NavMenu from '@components/Header/Nav/NavMenu'
+import LogoLink from '@components/Logo/LogoLink.astro'
+---
+
+<header class="bg-white border-b border-gray-200">
+	<div>
+		<div class="flex justify-between items-center w-full">
+			<LogoLink />
+			<NavMenu client:load />
+		</div>
+	</div>
+</header>

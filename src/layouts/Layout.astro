@@ -1,6 +1,7 @@
 ---
 import '@styles/global.css'
-import Navbar from '@components/Navbar/Navbar.tsx'
+import Header from '@components/Header/Header.astro'
+import Footer from '@components/Footer/Footer.astro'
 const baseUrl = import.meta.env.BASE_URL || '/'
 ---
 
@@ -13,10 +14,13 @@ const baseUrl = import.meta.env.BASE_URL || '/'
 		<meta name="generator" content={Astro.generator} />
 		<title>Galgo Supernova</title>
 	</head>
-	<body class="m-0 size-full max-w-xxl mx-auto">
-		<Navbar client:load />
-		<main class="px-4 md:px-6 lg:px-10 py-6">
-			<slot />
-		</main>
+	<body class="m-0 size-full max-w-[1920px] mx-auto">
+		<div class="px-4 sm:px-6 lg:px-10">
+			<Header />
+			<main class="py-6">
+				<slot />
+			</main>
+			<Footer />
+		</div>
 	</body>
 </html>
