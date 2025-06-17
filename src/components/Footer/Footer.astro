@@ -1,41 +1,26 @@
 ---
-import { socialNetworks } from 'src/constants/social-networks'
+import { SOCIAL_MEDIA } from '@constants/social-media'
 
-import { Image } from 'astro:assets'
-
-import InternalLink from 'src/components/InternalLink/InternalLink.tsx'
-
-import Logo from '@images/galgosupernova-logo.jpg'
+import LogoLink from '@components/Logo/LogoLink.astro'
 ---
 
-<footer class="px-4 md:px-6 lg:px-10 py-6">
-	<div
-		class="flex flex-col-reverse justify-center items-center border-t border-gray-200 pt-6 gap-4 md:flex-row md:justify-between"
-	>
-		<div class="">
-			<InternalLink client:load href="">
-				<Image
-					class="col-span-2"
-					src={Logo}
-					alt="Galgosupernova Logo"
-					class="size-20"
-				/>
-			</InternalLink>
-		</div>
-		<div class="">
-			<ul
-				class="flex flex-col justify-end gap-4 col-span-2 text-center md:flex-row md:text-left"
-			>
-				{
-					socialNetworks.map(({ name, url }) => (
-						<li>
-							<a href={url} target="_blank">
-								{name}
-							</a>
-						</li>
-					))
-				}
-			</ul>
-		</div>
+<footer
+	class="flex flex-col-reverse justify-center items-center border-t border-gray-200 py-6 gap-4 md:flex-row md:justify-between"
+>
+	<LogoLink />
+	<div>
+		<ul
+			class="flex flex-col justify-end gap-4 col-span-2 text-center md:flex-row md:text-left"
+		>
+			{
+				SOCIAL_MEDIA.map(({ name, url }) => (
+					<li>
+						<a href={url} target="_blank">
+							{name}
+						</a>
+					</li>
+				))
+			}
+		</ul>
 	</div>
 </footer>
