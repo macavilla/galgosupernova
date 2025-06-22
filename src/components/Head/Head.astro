@@ -1,0 +1,43 @@
+---
+const baseUrl = import.meta.env.BASE_URL || '/'
+const siteTitle = 'Galgo Supernova'
+const siteDescription =
+	'Galgo Supernova, taller de bicis. Taller de mecánica comunitaria en Buenos Aires.'
+const siteImage = baseUrl + '/og-image.jpg'
+const siteUrl = baseUrl
+---
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/svg+xml" href={baseUrl + '/favicon.ico'} />
+	<meta name="generator" content={Astro.generator} />
+
+	<!-- SEO Meta Tags -->
+	<title>{siteTitle}</title>
+	<meta name="description" content={siteDescription} />
+	<meta name="author" content="Galgo Supernova" />
+	<meta
+		name="keywords"
+		content="galgo, supernova, taller, mecánica, comunitaria, bicicletas, pedaleadas, buenos aires, argentina, reparación, mantenimiento, comunidad, sustentabilidad, comunitario, bicicletas comunitarias, mecánica de bicicletas, reparación de bicicletas, mantenimiento de bicicletas, comunidad ciclista, sustentabilidad ciclista"
+	/>
+	<link rel="canonical" href={siteUrl} />
+
+	<!-- Open Graph Meta Tags (Social Media) -->
+	<meta property="og:title" content={siteTitle} />
+	<meta property="og:description" content={siteDescription} />
+	<meta property="og:image" content={siteImage} />
+	<meta property="og:url" content={siteUrl} />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter Card Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={siteTitle} />
+	<meta name="twitter:description" content={siteDescription} />
+	<meta name="twitter:image" content={siteImage} />
+	<meta name="twitter:url" content={siteUrl} />
+
+	<!-- Additional Meta Tags -->
+	<meta name="robots" content="index, follow" />
+	<meta name="theme-color" content="#000000" />
+</head>
