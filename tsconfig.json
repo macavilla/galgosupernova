@@ -5,7 +5,8 @@
 			"@components/*": ["src/components/*"],
 			"@constants/*": ["src/constants/*"],
 			"@images/*": ["src/assets/images/*"],
-			"@styles/*": ["src/styles/*"]
+			"@styles/*": ["src/styles/*"],
+			"@public/*": ["public/*"]
 		},
 		"jsx": "react-jsx",
 		"jsxImportSource": "react"
